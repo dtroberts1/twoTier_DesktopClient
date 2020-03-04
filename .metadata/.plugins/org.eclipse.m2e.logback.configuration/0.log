@@ -1730,3 +1730,6 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact net.proteanit
 2020-03-03 19:54:08,235 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2020-03-03 19:54:08,245 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-03-03 19:54:08,247 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\drobe\Dropbox\Enterprise Computing\Project 3\TwoTierSys\src\test\resources
+2020-03-03 20:07:51,110 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2020-03-03 20:08:11,672 [Worker-40: Launching TwoTierSys (8)] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\drobe\Dropbox\Enterprise Computing\Project 3\TwoTierSys
+2020-03-03 20:08:11,688 [Worker-40: Launching TwoTierSys (8)] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean compile assembly:single

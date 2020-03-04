@@ -1,5 +1,7 @@
 com\TwoTierSystem\ClientGui\ClientGui.class
-com\TwoTierSystem\TwoTierSys\App.class
 com\TwoTierSystem\ClientGui\ButtonWithExtras.class
 com\TwoTierSystem\Model\CyclingData.class
+com\TwoTierSystem\ClientGui\SqlCmdTextArea.class
+com\TwoTierSystem\MyListener\MyKeyListener.class
+com\TwoTierSystem\TwoTierSys\App.class
 com\TwoTierSystem\MyListener\MyListener.class
