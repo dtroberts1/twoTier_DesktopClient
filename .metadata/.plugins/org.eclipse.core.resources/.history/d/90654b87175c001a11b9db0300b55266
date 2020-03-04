@@ -1,0 +1,28 @@
+package com.TwoTierApp.ClientGui;
+import javax.swing.JButton;
+
+import com.TwoTierApp.ClientGui.ClientGui;
+
+/*  Name:  Dylan Roberts
+ * Course: CNT 4714 – Spring 2020      
+ * Assignment title: Project 3     
+ * Date: Wednesday February 26, 2020 
+*/
+
+public class ButtonWithExtras extends JButton{
+	private ClientGui guiViewParent;
+	
+	public ButtonWithExtras() {
+		super();
+	}
+    public ButtonWithExtras(String text) {
+		super(text);
+	}
+	public ClientGui getButtonParent() {
+		return this.guiViewParent;
+	}
+	public void setBtnParent(ClientGui guiView) {
+		this.guiViewParent = guiView;
+	}
+	
+}

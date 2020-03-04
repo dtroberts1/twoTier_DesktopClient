@@ -1,0 +1,43 @@
+package com.TwoTierApp.MyListener;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import com.TwoTierSystem.ClientGui.ButtonWithExtras;
+import com.TwoTierSystem.ClientGui.ClientGui;
+
+public class MyListener implements ActionListener {
+	
+    public void actionPerformed(ActionEvent e) {
+    	boolean successfulConnection;
+		String conditionString = e.getActionCommand().replaceAll("\\d", "");
+		//System.out.printf("source is %s", conditionString);
+		
+		if (e.getSource() instanceof ButtonWithExtras) {
+
+			ClientGui clientGui = ((ButtonWithExtras)e.getSource()).getButtonParent();
+			
+			if(conditionString.equals("Connect To Database"))
+			{	
+				System.out.print("URL IS " + clientGui.getUrl());
+				System.out.print("username is " + clientGui.getUserName() + ", password is " + clientGui.getPassword());
+				successfulConnection = clientGui.getCyclingData().establishConnection(clientGui.getUrl(), clientGui.getUserName(), clientGui.getPassword());
+				if (successfulConnection) {
+					clientGui.setConnectionOutput(true);
+				}
+				else {
+					clientGui.setConnectionOutput(false);
+				}
+			}	
+			else if(conditionString.equals("Clear SQL Command")) {
+				clientGui.clearSqlCmd();
+			}
+			else if(conditionString.equals("Execute SQL Command")) {
+				clientGui.executeSql();
+			}
+			else if(conditionString.equals("Clear Result Window")) {
+				clientGui.clearResults();
+			}
+
+		}
+    }
+}

@@ -1,0 +1,23 @@
+package TwoTierSystem.TwoTierSys;
+
+//import com.TwoTierSystem.ClientGui.ClientGui;
+//import com.TwoTierSystem.Model.CyclingData;
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver"); // should pull from a config file instead
+			//CyclingData cyclingData = new CyclingData();
+			//ClientGui gui = new ClientGui(cyclingData);
+
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			
+		}		
+
+	}
+
+}
